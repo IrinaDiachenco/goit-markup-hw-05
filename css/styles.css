@@ -473,6 +473,7 @@ h1 {
    
 .product-overlay:hover .hover-text,
 .product-overlay:focus .hover-text {
+    display: block;
     transform: translateY(100%);
     top: 0px;
 }
@@ -515,7 +516,7 @@ h1 {
     color: var(--header-bg-color);
     background-color: var(--accent-color);
     position: absolute;
-    transform: none;
+    opacity: 0;
     width: 370px;
     height: 294px;
     padding-top: 63px;
