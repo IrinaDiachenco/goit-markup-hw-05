@@ -483,6 +483,7 @@ h1 {
 
 .product-overlay img {
     width: 100%;
+    
 }
 
 .product-overlay:hover,
@@ -501,8 +502,8 @@ h1 {
     overflow: hidden;
 }
 
-.image-content:hover {   
-    opacity: 0;
+.product-overlay:hover .image-content {   
+    
 }
 
 .hover-text {
@@ -514,7 +515,7 @@ h1 {
     color: var(--header-bg-color);
     background-color: var(--accent-color);
     position: absolute;
-    opacity: 0;
+    
     width: 370px;
     height: 294px;
     padding-top: 63px;
