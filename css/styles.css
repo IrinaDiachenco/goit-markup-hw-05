@@ -473,9 +473,8 @@ h1 {
    
 .product-overlay:hover .hover-text,
 .product-overlay:focus .hover-text {
-    display: block;
     transform: translateY(100%);
-    top: 0px;
+    opacity: 1;
 }
 
 .product-overlay .hover-text {
@@ -492,7 +491,6 @@ h1 {
 }
 
 .product-overlay:hover .product-overlay {
-    
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
@@ -522,7 +520,7 @@ h1 {
     padding-top: 63px;
     padding-left: 24px;
     padding-right: 24px;
-    transition: top var(--transition-function);
+    transition: var(--transition-function);
 }
 
 .name-text-project {
