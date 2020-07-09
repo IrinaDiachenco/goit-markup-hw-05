@@ -143,6 +143,9 @@ h1 {
 
 .email:hover {
     color: var(--accent-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail {
@@ -151,6 +154,9 @@ h1 {
     margin-right: 10px;
     fill: var(--secondary-text-color);
     cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel {
@@ -172,6 +178,9 @@ h1 {
 
 .tel:hover {
     color: var(--accent-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-tel {
@@ -179,6 +188,9 @@ h1 {
     height: 11.2px;
     margin-right: 10px;
     cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-main1 .item {
@@ -302,6 +314,20 @@ h1 {
     color: var(--header-bg-color);
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.doing-img {
+    display: block;
+    
 }
 
 .text {
@@ -331,6 +357,7 @@ h1 {
 
 .box {
      margin: 0px;
+     position: relative;
 }
 
 .team-section {
@@ -379,13 +406,16 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-bg:hover {
     background-color: var(--accent-color); 
 }
 
-.link-bg:hover svg{
+.link-bg:hover svg {
     fill: var(--header-bg-color); 
 }
 
@@ -396,10 +426,7 @@ h1 {
     width: 20px;
     height: 20px;
     fill: var(--client-color);
-}
-
-.soc-link {
-    transition-property: background-color;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -452,24 +479,28 @@ h1 {
     line-height: 1.56;
     color: var(--header-bg-color);
     background-color: var(--accent-color);
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 262px;
-    opacity: 0;   
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0; 
+    transform: translateY(0);
+    content: '';  
 }
 
 .text-project-secondary:hover {
     opacity: 1;
+    transform: translateY(-100%);
+    content: '';
 }
 
 .product-overlay {
-    position: relative;
-    overflow: hidden;
+    position: absolute;
     opacity: 1;
-    transform: translateY(0);
-    content: ''; 
+    
+    
+    
 }
 
 .product-overlay:hover {
@@ -477,8 +508,8 @@ h1 {
 }
 
 .product-overlay:hover .product-overlay {
-    transform: translateY(-100%);
-    content: '';
+    
+    
 }
 
 .image-content {
@@ -486,7 +517,7 @@ h1 {
 }
 
 .image-content:hover {
-    
+   
     
     
 }
@@ -522,6 +553,9 @@ h1 {
     text-align: center;
     padding-top: 24px;
     cursor: pointer;
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item .item:hover {
@@ -539,36 +573,54 @@ h1 {
     width: 44.27px;
     height: 49.23px;
     fill: var(--client-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-logo2 {
     width: 40px;
     height: 52px;
     fill: var(--client-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-logo3 {
     width: 41px;
     height: 42.6px;
     fill: var(--client-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-logo4 {
     width: 79.66px;
     height: 42.02px;
     fill: var(--client-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-logo5 {
     width: 59px;
     height: 47px;
     fill: var(--client-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-logo6 {
     width: 88.48px;
     height: 45.44px;
     fill: var(--client-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section {
@@ -647,6 +699,9 @@ footer {
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links .link-bg:hover {
@@ -708,6 +763,9 @@ footer {
 
 footer .logo {
     color: var(--header-bg-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-button {
@@ -760,6 +818,9 @@ footer .logo {
     font-size: 16px;
     line-height: 1.63;
     margin-right: 9px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons:last-child {
