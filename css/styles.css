@@ -527,6 +527,7 @@ h1 {
     display: inline-block;
     position: relative;
     overflow: hidden;
+    padding-left: 24px;
 }
 
 .customers-section {
