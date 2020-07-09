@@ -467,7 +467,7 @@ h1 {
 }
 
 .product-overlay {
-    display: inline-block;
+    
     transition: box-shadow var(--transition-function);
     transition-property: transform;
     transition-duration: 250ms;
@@ -497,17 +497,9 @@ h1 {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.product-overlay:hover .product-overlay {
-    
-}
-
 .image-content {
     position: relative;
     overflow: hidden;
-}
-
-.product-overlay:hover .image-content {   
-    
 }
 
 .hover-text {
@@ -525,7 +517,6 @@ h1 {
     padding-top: 63px;
     padding-left: 24px;
     padding-right: 24px;
-    transition: var(--transition-function);
 }
 
 .name-text-project {
@@ -533,6 +524,7 @@ h1 {
     position: relative;
     overflow: hidden;
     padding-left: 24px;
+    width: 100%;
 }
 
 .customers-section {
