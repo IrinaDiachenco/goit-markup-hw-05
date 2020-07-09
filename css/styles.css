@@ -480,6 +480,7 @@ h1 {
 .product-overlay:focus .image-content::before {
     transform: translateY(0);
     content: '';
+    opacity:  1;
 }
 
 .product-overlay:hover .product-overlay {
@@ -491,7 +492,11 @@ h1 {
 .image-content {
     position: relative;
     overflow: hidden;
-    opacity: 1;
+    opacity:  1;
+}
+
+.image-content:hover {   
+    opacity: 0;
 }
 
 .product-overlay .image-content::before{
@@ -511,16 +516,8 @@ h1 {
     padding-top: 63px;
     padding-left: 24px;
     padding-right: 24px;
-    transform: translateY(-100%);
-    opacity: 0;
-}
-
-.product-overlay:hover .image-content::before {
-    opacity: 1;
-}
-
-.image-content:hover {   
-    opacity: 0;
+    transform: translateY(0);
+    opacity:  0;
 }
 
 .name-text-project {
