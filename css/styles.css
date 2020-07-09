@@ -469,16 +469,21 @@ h1 {
 .product-overlay {
     display: inline-block;
     transition: box-shadow var(--transition-function);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    content: '';
 }   
    
 .product-overlay:hover .hover-text,
 .product-overlay:focus .hover-text {
+    content: '';
     transform: translateY(0);
     opacity: 1;
 }
 
 .product-overlay .hover-text {
-    top: 0;
+    content: '';
     transform: translateY(-100%);
 }
 
@@ -493,9 +498,7 @@ h1 {
 }
 
 .product-overlay:hover .product-overlay {
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    
 }
 
 .image-content {
@@ -516,7 +519,7 @@ h1 {
     color: var(--header-bg-color);
     background-color: var(--accent-color);
     position: absolute;
-    
+    margin: 0px;
     width: 370px;
     height: 294px;
     padding-top: 63px;
