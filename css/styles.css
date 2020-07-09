@@ -466,8 +466,7 @@ h1 {
     color: var(--secondary-text-color)
 }
 
-.product-overlay {
-    
+.project-item-nav {
     transition: box-shadow var(--transition-function);
     transition-property: transform;
     transition-duration: 250ms;
@@ -475,21 +474,23 @@ h1 {
     content: '';
 }   
    
-.product-overlay:hover .hover-text,
-.product-overlay:focus .hover-text {
-    content: '';
+.project-item-nav:hover .box-hover-text,
+.project-item-nav:focus .box-hover-text {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 0.9;
 }
 
-.product-overlay .hover-text {
-    content: '';
-    transform: translateY(-100%);
+.box-hover-text {
+    transform: translateY(100%);
+    position: absolute;
+    bottom: 0;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .product-overlay img {
     width: 100%;
-    
 }
 
 .product-overlay:hover,
@@ -510,7 +511,7 @@ h1 {
     line-height: 1.56;
     color: var(--header-bg-color);
     background-color: var(--accent-color);
-    position: absolute;
+    
     margin: 0px;
     width: 370px;
     height: 294px;
