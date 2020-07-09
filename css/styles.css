@@ -473,12 +473,13 @@ h1 {
    
 .product-overlay:hover .hover-text,
 .product-overlay:focus .hover-text {
-    transform: translateY(100%);
+    transform: translateY(0);
     opacity: 1;
 }
 
 .product-overlay .hover-text {
-    transform: translateY(0);
+    top: 0;
+    transform: translateY(-100%);
 }
 
 .product-overlay img {
