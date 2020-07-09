@@ -471,7 +471,32 @@ h1 {
     color: var(--secondary-text-color)
 }
 
-.text-project-secondary {
+.product-overlay {
+    display: inline-block;
+    position: absolute;
+}   
+   
+.product-overlay:hover .image-content::before,
+.product-overlay:focus .image-content::before {
+    transform: translateY(0);
+    content: '';
+}
+
+.product-overlay:hover .product-overlay {
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.image-content {
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.product-overlay .image-content::before{
+    display: inline-block;
+    content: 'Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -481,45 +506,27 @@ h1 {
     background-color: var(--accent-color);
     position: relative;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
-    
-    opacity: 0; 
-    transform: translateY(0);
-    content: '';  
-}
-
-.text-project-secondary:hover {
-    opacity: 1;
+    width: 370px;
+    height: 294px;
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
     transform: translateY(-100%);
-    content: '';
-}
-
-.product-overlay {
-    position: absolute;
-    opacity: 1;
-    
-    
-    
-}
-
-.product-overlay:hover {
     opacity: 0;
 }
 
-.product-overlay:hover .product-overlay {
-    
-    
+.product-overlay:hover .image-content::before {
+    opacity: 1;
 }
 
-.image-content {
-    
+.image-content:hover {   
+    opacity: 0;
 }
 
-.image-content:hover {
-   
-    
-    
+.name-text-project {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
 
 .customers-section {
