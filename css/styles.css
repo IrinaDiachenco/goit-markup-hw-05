@@ -484,6 +484,8 @@ h1 {
     transform: translateY(100%);
     position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 100%;
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
@@ -511,10 +513,9 @@ h1 {
     line-height: 1.56;
     color: var(--header-bg-color);
     background-color: var(--accent-color);
-    
     margin: 0px;
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     padding-top: 63px;
     padding-left: 24px;
     padding-right: 24px;
@@ -814,6 +815,7 @@ footer .logo {
     line-height: 1.63;
     border: 0px;
     border-radius: 4px;
+    padding: 6px 22px;
 }
 
 .button {
