@@ -519,6 +519,11 @@ h1 {
     overflow: hidden;
 }
 
+.image {
+    width: 370px;
+    height: 294px;
+}
+
 .hover-text {
     font-family: Roboto, sans-serif;
     font-style: normal;
