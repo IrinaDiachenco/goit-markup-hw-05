@@ -541,6 +541,7 @@ h1 {
     overflow: hidden;
     padding-left: 24px;
     width: 100%;
+    border: 1px solid #EEEEEE;
 }
 
 .customers-section {
@@ -680,7 +681,7 @@ h1 {
     margin-left: 0px;
     padding-left: 0px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    
     box-sizing: border-box;
 }
 
