@@ -198,6 +198,10 @@ h1 {
     margin-right: 0px;
 }
 
+.main {
+    padding-top: 94px;
+}
+
 .overlay {
     max-width: 1600px;
     height: 480px;
@@ -670,7 +674,7 @@ h1 {
     margin-left: 0px;
     padding-left: 0px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    
     box-sizing: border-box;
 }
 
