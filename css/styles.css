@@ -477,7 +477,7 @@ h1 {
     color: var(--secondary-text-color);
     margin-bottom: 0;
     margin-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
 }
 
 .project-item-nav {
@@ -503,6 +503,7 @@ h1 {
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 
 .product-overlay img {
@@ -546,6 +547,10 @@ h1 {
     padding-left: 24px;
     width: 100%;
     border: 1px solid #EEEEEE;
+}
+
+.name-text-project:hover {
+    border-bottom: none;
 }
 
 .customers-section {
