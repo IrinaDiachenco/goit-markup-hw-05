@@ -549,7 +549,8 @@ h1 {
     border: 1px solid #EEEEEE;
 }
 
-.name-text-project:hover {
+.project-item-nav:hover .name-text-project,
+.project-item-nav:focus .name-text-project {
     border-bottom: none;
 }
 
